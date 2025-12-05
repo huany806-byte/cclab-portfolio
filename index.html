@@ -3,38 +3,67 @@
   <head>
     <meta charset="utf-8" />
     <title>Joejoe’s Portfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
+    <header class="site-nav">
+      <div class="nav-inner">
+        <span class="badge">Joejoe’s Portfolio</span>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+      </div>
+    </header>
 
-    <h1>Joejoe’s Portfolio</h1>
-    <p>This is a collection of all six projects I created in Creative Coding Lab.</p>
+    <section class="hero container">
+      <h1 class="title">Creative Coding Lab — Projects</h1>
+      <p class="subtitle">Six p5.js projects exploring drawing, interaction, time, collaboration, illusion, and play.</p>
+    </section>
 
-    <h2>Projects</h2>
-    <ul>
-      <li>
-        <a href="projects/project-1.html">Project 1 — Lost & Found</a>
-      </li>
-      <li>
-        <a href="projects/project-2.html">Project 2 — Face Generator</a>
-      </li>
-      <li>
-        <a href="projects/project-3.html">Project 3 — Experimental Clock</a>
-      </li>
-      <li>
-        <a href="projects/project-4.html">Project 4 — Exquisite Corpse</a>
-      </li>
-      <li>
-        <a href="projects/project-5.html">Project 5 — Optical Illusion</a>
-      </li>
-      <li>
-        <a href="projects/project-6.html">Project 6 — Autobiographical Game</a>
-      </li>
-    </ul>
+    <main class="container">
+      <div class="grid">
+        <article class="card">
+          <h3>Project 1 — Lost &amp; Found</h3>
+          <p class="muted">Translate a detailed written scene into simple geometric forms in p5.js.</p>
+          <a class="link" href="projects/project-1.html">View project →</a>
+        </article>
 
-    <h2>About</h2>
-    <p>
-      <a href="about.html">About Me</a>
-    </p>
+        <article class="card">
+          <h3>Project 2 — Face Generator</h3>
+          <p class="muted">Min/max sketches + random ranges to create interactive generative faces.</p>
+          <a class="link" href="projects/project-2.html">View project →</a>
+        </article>
 
+        <article class="card">
+          <h3>Project 3 — Experimental Clock</h3>
+          <p class="muted">Seconds, minutes, and hours as flowing, water-like progress bars.</p>
+          <a class="link" href="projects/project-3.html">View project →</a>
+        </article>
+
+        <article class="card">
+          <h3>Project 4 — Exquisite Corpse</h3>
+          <p class="muted">A collaborative character with a muscular upper body and weird glasses.</p>
+          <a class="link" href="projects/project-4.html">View project →</a>
+        </article>
+
+        <article class="card">
+          <h3>Project 5 — Optical Illusion</h3>
+          <p class="muted">Color-shifting dots on circular paths create motion/depth illusions.</p>
+          <a class="link" href="projects/project-5.html">View project →</a>
+        </article>
+
+        <article class="card">
+          <h3>Project 6 — Autobiographical Game</h3>
+          <p class="muted">Joejoe’s cooking journey: catch, fix, and finish a perfectly imperfect dish.</p>
+          <a class="link" href="projects/project-6.html">View project →</a>
+        </article>
+      </div>
+
+      <footer>
+        <div class="container" style="padding-left:0;padding-right:0;">
+          © Joejoe — CCLab Portfolio
+        </div>
+      </footer>
+    </main>
   </body>
 </html>
