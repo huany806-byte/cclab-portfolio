@@ -3,35 +3,31 @@
   <head>
     <meta charset="utf-8" />
     <title>Project 2 — Face Generator</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="../css/style.css" />
   </head>
   <body>
+    <header class="site-nav">
+      <div class="nav-inner">
+        <span class="badge">Joejoe</span>
+        <a href="../index.html">Home</a>
+        <a href="../about.html">About</a>
+      </div>
+    </header>
 
-    <!-- Navigation -->
-    <nav>
-      <a href="../index.html">Home</a> |
-      <a href="../about.html">About</a> |
-      <a href="project-1.html">Project 1</a> |
-      <a href="project-2.html">Project 2</a>
-    </nav>
+    <main class="container prose">
+      <h1>Project 2 — Face Generator</h1>
+      <p class="muted">
+        This face generator starts from two hand-drawn sketches—one at the minimum scale and one at the maximum—and uses
+        <code>random(min, max)</code> to vary each feature. Building it showed me how tiny code or value changes can
+        dramatically alter a generative result; I also added <code>mouseY</code> and <code>mousePressed()</code> for interaction.
+      </p>
 
-    <h1>Project 2 — Face Generator</h1>
+      <div class="embed">
+        <iframe src="https://editor.p5js.org/YUHUANG/full/wgwZ7LYKS" width="100%" height="600" style="border:none;"></iframe>
+      </div>
 
-    <!-- Summary -->
-    <p>
-      This face generator uses two hand-drawn sketches—one at minimum scale and one at maximum—and applies
-      random(min, max) ranges to vary each facial feature between those extremes. Building this system showed me
-      how small code or value changes can dramatically alter a generative result, and how careful structure is key
-      to creating expressive outputs.
-    </p>
-
-    <!-- p5.js embedded sketch -->
-    <iframe 
-      src="https://editor.p5js.org/YUHUANG/full/wgwZ7LYKS"
-      width="100%" 
-      height="600"
-      style="border:none;">
-    </iframe>
-
+      <p><a href="../index.html">← Back to Home</a></p>
+    </main>
   </body>
 </html>
-
