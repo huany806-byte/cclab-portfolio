@@ -1,0 +1,45 @@
+/* ===== Base ===== */
+:root{
+  --bg:#0b0d12;        /* 背景 */
+  --fg:#e8ebf1;        /* 正文字色 */
+  --muted:#9aa4b2;     /* 次要文字色 */
+  --card:#11141b;      /* 卡片背景 */
+  --border:#1e2636;    /* 边框色 */
+  --accent:#7aa2ff;    /* 强调色 */
+  --max:1000px;        /* 页面最大宽度 */
+}
+*{box-sizing:border-box}
+html,body{margin:0; background:var(--bg); color:var(--fg);
+  font:16px/1.6 ui-sans-serif,system-ui,-apple-system,Segoe UI,Roboto,Arial,"Noto Sans",sans-serif}
+a{color:var(--accent); text-decoration:none}
+a:hover{text-decoration:underline}
+
+/* ===== Layout ===== */
+.container{max-width:var(--max); margin:0 auto; padding:24px 16px}
+.hero{padding:36px 16px 12px}
+.title{font-size:32px; font-weight:800; letter-spacing:.2px; margin:0 0 6px}
+.subtitle{color:var(--muted); margin:0}
+
+/* ===== Nav ===== */
+.site-nav{position:sticky; top:0; z-index:10; backdrop-filter: blur(6px);
+  border-bottom:1px solid var(--border); background:rgba(11,13,18,.6)}
+.nav-inner{max-width:var(--max); margin:0 auto; padding:10px 16px; display:flex; gap:14px; align-items:center}
+.badge{font-weight:700; color:var(--fg); background:#152035; border:1px solid var(--border);
+  border-radius:12px; padding:6px 10px}
+.site-nav a{color:var(--fg); padding:6px 10px; border-radius:10px}
+.site-nav a:hover{background:#121826}
+
+/* ===== Grid cards ===== */
+.grid{display:grid; gap:16px; grid-template-columns:repeat(auto-fill,minmax(260px,1fr))}
+.card{background:var(--card); border:1px solid var(--border); border-radius:16px; padding:16px; height:100%;
+  display:flex; flex-direction:column; gap:8px; transition:transform .12s ease}
+.card:hover{transform:translateY(-2px)}
+.card h3{margin:0; font-size:18px}
+.card p{margin:0; color:var(--muted)}
+.card .link{margin-top:auto; font-weight:600}
+
+/* ===== Article pages ===== */
+.prose{max-width:760px}
+.embed{margin:16px 0; border:1px solid var(--border); border-radius:12px; overflow:hidden}
+.muted{color:var(--muted)}
+footer{color:var(--muted); border-top:1px solid var(--border); margin-top:36px; padding:20px 0}
